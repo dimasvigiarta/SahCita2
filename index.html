@@ -257,12 +257,8 @@
     <button
       class="scroll-top-btn"
       onclick="scrollToTop()"
-      title="Kembali ke atas"
-    >
+      title="Kembali ke atas">
     <i class="fas fa-circle-chevron-up"></i>
-
-
-
     </button>
     </main> 
 
@@ -384,6 +380,26 @@
       function scrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
+      
+const scrollBtn = document.querySelector(".scroll-top-btn");
+const aboutSection = document.getElementById("about");
+
+// tombol scroll sembunyi
+window.addEventListener("load", function () {
+  scrollBtn.style.display = "none";
+});
+
+// tombol scroll tampil
+window.addEventListener("scroll", function () {
+  const scrollY = window.pageYOffset;
+  const aboutTop = aboutSection.offsetTop;
+
+  if (scrollY >= aboutTop) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});
 </script>
 
     </script>

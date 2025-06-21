@@ -3,107 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dokumen</title>
+    <title>Dokumen Bisnis | SahCita</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-D7sEzMboF+P5pUL5oME0zZ7X..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <style>
-      :root {
-        --biru: #0010f6;
-        --ungu: #800080;
-        --orange: #ffa500;
-        --white: #ffffff;
-        --gray: #f4f4f4;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: var(--gray);
-        color: #333;
-      }
-
-      header {
-        background: linear-gradient(to right, var(--biru), var(--ungu));
-        color: var(--white);
-        padding: 20px;
-        text-align: center;
-      }
-
-      .icon-link {
-        display: inline-block;
-        font-size: 60px;
-        color: var(--orange);
-        text-decoration: none;
-        margin-bottom: 10px;
-      }
-
-      .icon-link:hover {
-        color: var(--white);
-      }
-
-      h1 {
-        font-size: 28px;
-        margin-top: 10px;
-      }
-
-      main {
-        padding: 20px;
-      }
-
-      .content {
-        max-width: 1000px;
-        margin: 0 auto;
-        background-color: var(--white);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      p {
-        line-height: 1.6;
-      }
-
-      @media screen and (max-width: 768px) {
-        .content {
-          padding: 20px;
-        }
-        h1 {
-          font-size: 24px;
-        }
-      }
-
-      @media screen and (max-width: 480px) {
-        .icon-link {
-          font-size: 40px;
-        }
-        h1 {
-          font-size: 20px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/style1.css" />
   </head>
   <body>
     <header>
       <a href="index.html#service" class="icon-link">
-        <i class="fas fa-file-alt"></i>
+        <i class="fas fa-building-columns"></i>
       </a>
-      <h1>Dokumen</h1>
+      <h1>Dokumen Bisnis</h1>
     </header>
+
     <main>
       <div class="content">
-        <p>
-          Kami menyediakan layanan pengurusan dokumen bisnis seperti akta
-          perusahaan, perizinan usaha, sertifikat halal, hingga dokumen
-          ekspor-impor.
-        </p>
-        <p>
-          Seluruh dokumen ditangani oleh tenaga profesional untuk memastikan
-          validitas dan kelengkapan secara hukum.
-        </p>
+        <img src="img/work1.png" alt="Dokumen SahCita" />
+        <div class="text">
+          <p>
+            Dokumen bisnis merupakan aspek vital dalam legalitas dan operasional
+            usaha yang sah. Kami membantu Anda dalam pengurusan akta pendirian,
+            NPWP, NIB, dan dokumen resmi lainnya yang dibutuhkan untuk
+            menjalankan bisnis secara legal.
+          </p>
+          <p>
+            Dengan proses yang cepat dan sistematis,
+            <strong>SahCita</strong> memastikan setiap dokumen usaha Anda
+            tersusun rapi, valid secara hukum, dan siap menunjang kepercayaan
+            mitra bisnis maupun investor.
+          </p>
+        </div>
       </div>
     </main>
+    <!-- testimoni -->
+    <section class="testimoni-section">
+      <div class="container">
+        <h3 class="testimoni-header light grey-text text-darken-3 center">
+          Testimoni
+        </h3>
+        <div class="testimoni-wrapper">
+          <div class="testimoni-track">
+            <!-- Card Testimoni -->
+            <div class="testimoni-card">
+              <h3>PT Maju Jaya</h3>
+              <p>
+                Pelayanan dari tim Sahcita sangat profesional dan responsif!
+              </p>
+            </div>
+            <div class="testimoni-card">
+              <h3>CV Sukses Makmur</h3>
+              <p>Sistem yang dibangun sangat membantu proses bisnis kami.</p>
+            </div>
+            <div class="testimoni-card">
+              <h3>PT Aman Sentosa</h3>
+              <p>Kami puas dengan hasil dan kecepatan pengerjaan proyeknya.</p>
+            </div>
+            <!-- Duplikasi untuk loop -->
+            <div class="testimoni-card">
+              <h3>PT Maju Jaya</h3>
+              <p>
+                Pelayanan dari tim Sahcita sangat profesional dan responsif!
+              </p>
+            </div>
+            <div class="testimoni-card">
+              <h3>CV Sukses Makmur</h3>
+              <p>Sistem yang dibangun sangat membantu proses bisnis kami.</p>
+            </div>
+            <div class="testimoni-card">
+              <h3>PT Aman Sentosa</h3>
+              <p>Kami puas dengan hasil dan kecepatan pengerjaan proyeknya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
